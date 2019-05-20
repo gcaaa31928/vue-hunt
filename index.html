@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="../dist/vue-hunt.js"></script>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="text/javascript">
+var app = new Vue({
+	el: '#app',
+	template: `
+		<div>
+			<p>{{ message }}</p>
+			<button v-on:click="reverseMessage">Reverse Message</button>
+		</div>
+	`,
+	data: {
+		message: 'Hello Vue.js!'
+	},
+	methods: {
+		reverseMessage: function () {
+			this.message = this.message.split('').reverse().join('')
+		}
+	}
+
+});
+VueHunt.inject(window);
+		</script>
+	</body>
+</html>
