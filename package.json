@@ -1,0 +1,15 @@
+{
+	"dependencies": {
+		"eslint": "^5.16.0",
+		"global": "^4.3.2"
+	},
+	"main": "dist/vue-hunt.umd.js",
+	"module": "dist/vue-hunt.es.js",
+	"scripts": {
+		"build": "rollup -c",
+		"watch": "rollup -c --watch"
+	},
+	"devDependencies": {
+		"rollup": "^1.12.3"
+	}
+}
